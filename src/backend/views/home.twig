@@ -1,0 +1,19 @@
+{% extends '../layouts/base.twig' %}
+{% block title %}Corona{% endblock %}
+{% block content %}
+<div id="app"></div>
+{% endblock %}
+
+{% block cssBlock %}
+{% if cssResource is not empty %}
+<link rel="stylesheet" type="text/css" href="{{cssResource}}">
+<link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="/fontawesome/css/brands.css" rel="stylesheet">
+<link href="/fontawesome/css/solid.css" rel="stylesheet">
+{% endif %}
+{% endblock %}
+
+{% block jsBlock %}
+<script type="text/javascript" src="{{vendorResource}}"></script>
+<script type="text/javascript" src="{{jsResource}}" ></script>
+{% endblock %}

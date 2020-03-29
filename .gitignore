@@ -1,0 +1,23 @@
+# system
+.DS_Store
+!.gitkeep
+
+# editor
+.vscode/
+
+# app
+.env
+_sess
+dist
+coverage
+keys
+npm-debug.log
+node_modules
+package-lock.json
+params.loc.js
+stats.json
+
+# deploy
+*.cert
+*.crt
+*.key
