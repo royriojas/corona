@@ -56,7 +56,7 @@ const writeInChunks = async (filePath, data) => {
   });
 };
 
-const processByLine = async ({ input, output }) => {
+const processByLine = async ({ input, countriesFile, casesFile, deathsFile }) => {
   const dfd = createDeferred();
   const readStream = fs.createReadStream(input);
 
@@ -67,7 +67,13 @@ const processByLine = async ({ input, output }) => {
       dfd.reject(err);
       return;
     }
-    await writeInChunks(output, JSON.stringify(countryList.serialize(), null, 2));
+
+    const data = countryList.serialize();
+
+    await writeInChunks(countriesFile, JSON.stringify(data.countries, null, 2));
+    await writeInChunks(casesFile, JSON.stringify(data.cases, null, 2));
+    await writeInChunks(deathsFile, JSON.stringify(data.deaths, null, 2));
+
     dfd.resolve();
   });
 
@@ -93,7 +99,9 @@ const processByLine = async ({ input, output }) => {
 const main = async () => {
   await processByLine({
     input: './data.csv',
-    output: './src/data/data-fixed.json',
+    countriesFile: './src/data/countries.json',
+    casesFile: './src/data/cases.json',
+    deathsFile: './src/data/deaths.json',
   });
 };
 

@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const { resolve } = require('path');
-const { defaultBrowserTargets } = require('../resources/browserTargets');
+const { defaultBrowserTargets } = require('../src/resources/browserTargets');
 const { getBabelLoaderOptions } = require('./babel-loader-helper');
 const baseConfig = require('./base');
 const { splitChunks, fileName, nodeEnv = 'development' } = require('./config');

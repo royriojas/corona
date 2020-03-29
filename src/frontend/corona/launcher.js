@@ -3,20 +3,24 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'mobx-react';
 import { doc } from '../common/globals';
+import Main from './Components/Main/Main';
+import { coronaStore } from '../stores/corona-store';
 
-const stores = {};
+const stores = {
+  coronaStore,
+};
+
+window.__stores = stores;
 
 const doRender = () =>
   render(
     <Provider {...stores}>
-      <div>Hello world</div>
+      <Main />
     </Provider>,
     doc.getElementById('app'),
   );
 
 doRender();
-
-window.__stores = stores;
 
 if (module.hot) {
   module.hot.accept();

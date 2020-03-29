@@ -28,6 +28,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@nivo/line": "^0.61.1",
     "@redisrupt/bnr": "^5.0.2",
     "@redisrupt/eslint-red": "^7.0.0",
     "babel-deps": "file:local_modules/babel-deps",
@@ -39,6 +40,7 @@
     "core-js": "^3.6.4",
     "csv-parse": "^4.8.8",
     "debouncy": "^1.0.8",
+    "ip": "^1.1.5",
     "luxon": "^1.22.2",
     "mkdirp": "^1.0.3",
     "mobx": "^5.15.4",
@@ -50,6 +52,7 @@
     "webpack-deps": "file:local_modules/webpack-deps"
   },
   "dependencies": {
+    "@khanacademy/react-multi-select": "^0.3.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "http-proxy": "^1.18.0",

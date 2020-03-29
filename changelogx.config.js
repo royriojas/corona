@@ -2,13 +2,13 @@ const usersHash = {
   'Roy Riojas': 'royriojas',
 };
 
-const inferTagFromCommit = ( commit, availableTags ) => {
-  const commitLowerCased = ( commit.subject || '' ).toLowerCase();
-  const matchesAFix = !!commitLowerCased.match( /\bfix\b/ || commitLowerCased.match( /\bbug fix\b/ ) );
-  const matchesARef = !!( commitLowerCased.match( /\bref\b/ ) || commitLowerCased.match( /\brefactor\b/ ) );
+const inferTagFromCommit = (commit, availableTags) => {
+  const commitLowerCased = (commit.subject || '').toLowerCase();
+  const matchesAFix = !!commitLowerCased.match(/\bfix\b/ || commitLowerCased.match(/\bbug fix\b/));
+  const matchesARef = !!(commitLowerCased.match(/\bref\b/) || commitLowerCased.match(/\brefactor\b/));
 
-  if ( matchesAFix ) return { tagId: 'FIX', tagName: availableTags.FIX };
-  if ( matchesARef ) return { tagId: 'REF', tagName: availableTags.REF };
+  if (matchesAFix) return { tagId: 'FIX', tagName: availableTags.FIX };
+  if (matchesARef) return { tagId: 'REF', tagName: availableTags.REF };
 
   const { tagId, tagName } = commit;
 
@@ -23,14 +23,14 @@ module.exports = {
     authorURL: 'https://github.com/royriojas/corona/{0}',
     issueIDURL: match => `https://github.com/royriojas/corona/${match}`,
     projectName: 'corona',
-    processCommit: ( entry, { commitTags } ) => {
+    processCommit: (entry, { commitTags }) => {
       const commit = entry.commit || {};
       entry.author = usersHash[entry.author] || entry.author;
 
-      if ( !commit.tagId || commit.tagId === 'NC' ) {
+      if (!commit.tagId || commit.tagId === 'NC') {
         entry.commit = {
           ...commit,
-          ...inferTagFromCommit( commit, commitTags ),
+          ...inferTagFromCommit(commit, commitTags),
         };
       }
       return entry;

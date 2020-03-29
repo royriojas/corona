@@ -30,11 +30,25 @@ class CountryEntry {
       { deaths: [], cases: [] },
     );
 
+    const cumulativeSum = sum => value => {
+      sum = sum += value.y;
+      return { x: value.x, y: sum };
+    };
+
+    const sum1 = cumulativeSum(0);
+    const sum2 = cumulativeSum(2);
+
     return {
       ...this.data,
       id: this.data.geoId,
-      deaths: ret.deaths.sort((a, b) => (a.x < b.x ? -1 : 1)).map(entry => ({ ...entry, x: entry.x.toISODate() })),
-      cases: ret.cases.sort((a, b) => (a.x < b.x ? -1 : 1)).map(entry => ({ ...entry, x: entry.x.toISODate() })),
+      deaths: ret.deaths
+        .sort((a, b) => (a.x < b.x ? -1 : 1))
+        .map((entry, index) => ({ ...entry, date: entry.x.toISODate(), x: `day-${index}` }))
+        .map(sum1),
+      cases: ret.cases
+        .sort((a, b) => (a.x < b.x ? -1 : 1))
+        .map((entry, index) => ({ ...entry, date: entry.x.toISODate(), x: `day-${index}` }))
+        .map(sum2),
     };
   }
 }
@@ -97,13 +111,14 @@ class CountryList {
     return Array.from(this.dataMap.values()).reduce(
       (acc, countryEntry) => {
         const entry = countryEntry.serialize();
-        const { id, cases, deaths, ...rest } = entry;
+        const { id, cases, deaths, country, ...rest } = entry;
 
-        acc.cases.push({ id, ...rest, values: cases });
-        acc.deaths.push({ id, ...rest, values: deaths });
+        acc.countries.push({ value: id, label: country });
+        acc.cases.push({ id, ...rest, data: cases });
+        acc.deaths.push({ id, ...rest, data: deaths });
         return acc;
       },
-      { cases: [], deaths: [] },
+      { cases: [], deaths: [], countries: [] },
     );
   }
 }
