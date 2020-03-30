@@ -16,4 +16,4 @@ A super simple web page to compare the covid-19 progress on several countries
 - Use the `public/` folder to deploy this as a static site
 
 ## Update the data
-- run `npm run update:data` and rebuild the app. It will fetch the newer data from 
+- run `npm run update:data` and rebuild the app. It will fetch the newer data from https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide
