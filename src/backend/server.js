@@ -87,6 +87,7 @@ export const startServer = () => {
   app.use(
     serveStatic(path.join(__dirname, '../../public'), {
       maxAge: '0',
+      index: false,
       setHeaders,
     }),
   );
