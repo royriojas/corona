@@ -49,6 +49,19 @@ export default class Main extends Component {
     return (
       <div className={cx('Main', { medium: screenStore.matchMedium })}>
         <h1>COVID-19 charts</h1>
+        <div className={cx('notes')}>
+          <p className={cx('title')}>Description</p>
+          <p>
+            The following chart compares the progression of the cases since the first case detected per each country. Data points are labeled from day-0 to
+            day-n.
+          </p>
+          <p>Move the mouse over the chart to see the data.</p>
+          <img src={'/assets/imgs/hover-state.png'} title="image of the hover state" />
+          <p>
+            Since some countries have more data than others sometimes is better to use a smaller range of data points to better compare. Use the "Show options"
+            to see some useful options for the chart
+          </p>
+        </div>
         <div className={cx('selector')}>
           <p className={cx('label')}>Countries to compare</p>
           <MultiSelect options={countries} selected={selectedCountries} onSelectedChanged={selectCountries} />

@@ -125,6 +125,7 @@ module.exports = {
     'import/no-unresolved': [0, { commonjs: true }],
     'import/export': 1,
     'jsx-a11y/img-has-alt': 0,
+    'jsx-a11y/alt-text': 0,
     'react/jsx-props-no-spreading': 0,
     'react/jsx-equals-spacing': [1, 'never'],
     'react/display-name': 0,
@@ -223,7 +224,6 @@ module.exports = {
     'react/no-access-state-in-setstate': 1,
     'react/no-unused-state': 1,
     'react/default-props-match-prop-types': 1,
-    'jsx-a11y/alt-text': 1,
     'react/no-this-in-sfc': 1,
     'jsx-a11y/label-has-for': 0, // this rule is depreacated https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md
     'jsx-a11y/anchor-is-valid': 1,
