@@ -46,6 +46,9 @@ export default class Main extends Component {
     const { props } = this;
     const { countries, selectCountries, selectedCountries, casesByCountry, deathsByCountry, screenStore } = props;
 
+    const link = 'https://opendata.ecdc.europa.eu/covid19/casedistribution/csv/';
+    const githubRepo = 'https://github.com/royriojas/corona/';
+
     return (
       <div className={cx('Main', { medium: screenStore.matchMedium })}>
         <h1>COVID-19 charts</h1>
@@ -60,6 +63,16 @@ export default class Main extends Component {
           <p>
             Since some countries have more data than others sometimes is better to use a smaller range of data points to better compare. Use the "Show options"
             to see some useful options for the chart
+          </p>
+          <p className={cx('title')}>
+            The data for these charts come from{' '}
+            <a target="blank" href={link}>
+              {link}
+            </a>
+            {'. '} It was transformed to json format.
+          </p>
+          <p>
+            The data is in csv format. You can go to <a href={githubRepo}>{githubRepo}</a> to see the code of this page
           </p>
         </div>
         <div className={cx('selector')}>
