@@ -8,7 +8,15 @@
   }
 
   .selector {
+    font-size: 14px;
     margin-bottom: 2rem;
+
+    :global(.item-renderer) {
+      input[type='checkbox'] {
+        margin-right: .5rem;
+        margin-left: .5rem;
+      }
+    }
   }
 
   &.medium {
@@ -20,10 +28,14 @@
   }
 }
 
+.label {
+  font-size: 14px;
+  font-weight: bold;
+}
 
 .footer {
-  text-align: center;
   padding: 2rem;
+  text-align: center;
 
   p {
     font-size: 12px;

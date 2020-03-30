@@ -50,6 +50,7 @@ export default class Main extends Component {
       <div className={cx('Main', { medium: screenStore.matchMedium })}>
         <h1>COVID-19 charts</h1>
         <div className={cx('selector')}>
+          <p className={cx('label')}>Countries to compare</p>
           <MultiSelect options={countries} selected={selectedCountries} onSelectedChanged={selectCountries} />
         </div>
         <LineWrapper screenStore={screenStore} title="Cases by country" data={casesByCountry} getTooltipForPoint={this.getTooltipForCases} />
