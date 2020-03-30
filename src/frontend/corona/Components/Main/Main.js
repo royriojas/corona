@@ -46,7 +46,7 @@ export default class Main extends Component {
     const { props } = this;
     const { countries, selectCountries, selectedCountries, casesByCountry, deathsByCountry, screenStore } = props;
 
-    const link = 'https://opendata.ecdc.europa.eu/covid19/casedistribution/csv/';
+    const link = 'https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide';
     const githubRepo = 'https://github.com/royriojas/corona/';
 
     return (
@@ -59,20 +59,20 @@ export default class Main extends Component {
             day-n.
           </p>
           <p>Move the mouse over the chart to see the data.</p>
-          <img src={'/assets/imgs/hover-state.png'} title="image of the hover state" />
+          <img src={'./assets/imgs/hover-state.png'} title="image of the hover state" />
           <p>
             Since some countries have more data than others sometimes is better to use a smaller range of data points to better compare. Use the "Show options"
             to see some useful options for the chart
           </p>
           <p className={cx('title')}>
-            The data for these charts come from{' '}
+            The data for these charts come from the{' '}
             <a target="blank" href={link}>
-              {link}
+              European Centre for Disease Prevention and Control
             </a>
-            {'. '} It was transformed to json format.
+            {'. '}
           </p>
           <p>
-            The data is in csv format. You can go to <a href={githubRepo}>{githubRepo}</a> to see the code of this page
+            To see the code of this page go to: <a href={githubRepo}>{githubRepo}</a>.
           </p>
         </div>
         <div className={cx('selector')}>
