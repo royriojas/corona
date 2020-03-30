@@ -32,7 +32,7 @@ module.exports = {
     minimizer,
   },
   entry: {
-    corona: [require.resolve('react-error-overlay'), resolve('src/frontend/corona/launcher.js')],
+    corona: [!isMinified ? require.resolve('react-error-overlay') : null, resolve('src/frontend/corona/launcher.js')].filter(s => !!s),
   },
   output: {
     path: resolve('./public/dist/'),

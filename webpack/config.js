@@ -14,7 +14,7 @@ module.exports = {
   babel: babelConfig,
 
   // entry.vendor
-  vendor: ['react', 'react-dom', 'mobx', 'mobx-react', 'classnames'],
+  vendor: ['react', 'react-dom', 'mobx', 'mobx-react', 'classnames', '@nivo/line', 'core-js', 'luxon'],
 
   /** PLUGIN OPTS * */
 
@@ -33,20 +33,15 @@ module.exports = {
     cleanOnceBeforeBuildPatterns: [resolve(__dirname, '../public/dist/**/*')],
   },
 
-  // splitChunks: {
-  //   cacheGroups: {
-  //     styles: {
-  //       name: 'commons',
-  //       test: /node_modules(.*)\.(css|less)$|\/frontend\/shared(.*)\.(css|less)$|\/dashboard\/shared(.*)\.(css|less)$/,
-  //       chunks: 'all',
-  //     },
-  //     commons: {
-  //       test: /node_modules(.*)\.(js|ts)$|\/frontend\/shared(.*)\.(js|ts)$|\/dashboard\/shared(.*)\.(js|ts)$/,
-  //       name: 'commons', // Specify the common bundle's name.
-  //       chunks: 'all',
-  //     },
-  //   },
-  // },
+  splitChunks: {
+    cacheGroups: {
+      data: {
+        test: /(.*)\.(json)$/,
+        name: 'data', // Specify the common bundle's name.
+        chunks: 'all',
+      },
+    },
+  },
 
   isMinified,
   nodeEnv: process.env.NODE_ENV,

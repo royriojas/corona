@@ -1,0 +1,50 @@
+@highlight: #3da69c;
+@highlightOnDarkBg: #9fd5c9;
+
+.icon {
+  &.withColor {
+    color: #666;
+
+    &.highlight {
+      color: @highlight;
+
+      svg {
+        fill: @highlight;
+      }
+    }
+
+    svg {
+      fill: #666;
+    }
+
+    &.disabled {
+      svg {
+        fill: fade(#666, 50%);
+      }
+    }
+
+    &.lighterForeground {
+      svg {
+        fill: #fff;
+      }
+
+      &.disabled {
+        svg {
+          fill: fade(#fff, 50%);
+        }
+      }
+    }
+
+    &.lighterForeground {
+      color: #fff;
+
+      &.disabled {
+        color: fade(#fff, 50%);
+      }
+    }
+
+    &.disabled {
+      color: fade(#666, 50%);
+    }
+  }
+}

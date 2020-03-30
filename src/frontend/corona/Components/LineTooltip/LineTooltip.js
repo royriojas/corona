@@ -5,8 +5,8 @@ import { formatAsNumber, formatAsDate } from '../../../common/format';
 
 const cx = classNames.bind(styles);
 
-export const LineTooltip = ({ country, date, serieColor, x, y, last }) => (
-  <div className={cx('countryBlock', { last })}>
+export const LineTooltip = ({ country, row, date, serieColor, x, y, last }) => (
+  <div className={cx('countryBlock', { last, row })}>
     <div className={cx('block-1')}>
       <div className={cx('box')} style={{ background: serieColor }} />
     </div>

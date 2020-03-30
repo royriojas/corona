@@ -6,6 +6,7 @@ import { observable, action, computed } from 'mobx';
 import { ResponsiveLine } from '@nivo/line';
 import classNames from 'classnames/bind';
 import styles from './LineWrapper.less';
+import { Icon } from '../../../common/components/Icon/Icon';
 
 const cx = classNames.bind(styles);
 
@@ -15,7 +16,7 @@ export default class LineWrapper extends Component {
   useArea = false;
 
   @observable
-  useRange = false;
+  useRange = true;
 
   @observable
   _minIndex;
@@ -25,6 +26,9 @@ export default class LineWrapper extends Component {
 
   @observable
   _maxCalculatedIndex;
+
+  @observable
+  _showOptions = false;
 
   @computed
   get minIndex() {
@@ -55,6 +59,11 @@ export default class LineWrapper extends Component {
   updateMinIndex = e => {
     const str = e.target.value;
     this._minIndex = str;
+  };
+
+  @action
+  toggleOptions = () => {
+    this._showOptions = !this._showOptions;
   };
 
   @action
@@ -106,49 +115,59 @@ export default class LineWrapper extends Component {
 
   render() {
     const { props } = this;
-    const { title, axisLeft, margin, xScale, data, getTooltipForPoint, yScale } = props;
+    const { title, axisLeft, margin, xScale, data, getTooltipForPoint, yScale, screenStore } = props;
 
     const calculatedAxisLeft = {
       orient: 'left',
-      tickSize: 5,
-      tickPadding: 5,
+      tickSize: screenStore.matchMedium ? 5 : -5,
+      tickPadding: screenStore.matchMedium ? 5 : -25,
       tickRotation: 0,
-      legendOffset: -40,
-      legendPosition: 'middle',
       ...axisLeft,
     };
 
     return (
-      <div className={cx('LineWrapper')}>
+      <div className={cx('LineWrapper', { medium: screenStore.matchMedium })}>
         <h2>{title}</h2>
-        <div className={cx('Controls')}>
-          <label>
-            <span>Area</span>
-            <span>
-              <input type="checkbox" checked={this.showAreaUnderLine} onChange={this.toggleArea} />
-              <span>Show area under line</span>
-            </span>
-          </label>
-          <label>
-            <span>Range</span>
-            <span>
-              <input type="checkbox" checked={this.useRange} onChange={this.toggleUseRange} />
-              <span>Use range</span>
-            </span>
-          </label>
-          <label>
-            <span>Range (min/max Indexes)</span>
-            <span>
-              <input min={0} max={this.maxIndex} type="number" value={this.minIndex} onChange={this.updateMinIndex} />
-              <input min={this.minIndex} max={this._maxCalculatedIndex} type="number" value={this.maxIndex} onChange={this.updateMaxIndex} />
-            </span>
-          </label>
-        </div>
+        <button type="button" className={cx('button')} onClick={this.toggleOptions}>
+          <Icon name="cog" lighterForeground />
+          <span className={cx('buttonLabel')}>{!this._showOptions ? 'Show Options' : 'Hide Options'}</span>
+        </button>
+        {this._showOptions && (
+          <div className={cx('Controls')}>
+            <label className={cx('Field')}>
+              <span className={cx('label')}>Area</span>
+              <span>
+                <input type="checkbox" checked={this.showAreaUnderLine} onChange={this.toggleArea} />
+                <span className={cx('text')}>Show area under line</span>
+              </span>
+            </label>
+            <label className={cx('Field')}>
+              <span className={cx('label')}>Range</span>
+              <span>
+                <input type="checkbox" checked={this.useRange} onChange={this.toggleUseRange} />
+                <span className={cx('text')}>Use the following range</span>
+              </span>
+            </label>
+            <label className={cx('Field', 'last')}>
+              <span className={cx('label')}>Range (min/max Indexes)</span>
+              <span className={cx('range')}>
+                <input min={0} max={this.maxIndex} type="number" value={this.minIndex} onChange={this.updateMinIndex} />
+                <input min={this.minIndex} max={this._maxCalculatedIndex} type="number" value={this.maxIndex} onChange={this.updateMaxIndex} />
+              </span>
+            </label>
+          </div>
+        )}
         <div className={cx('Line')}>
           <ResponsiveLine
             animate={false}
             data={this.filterData(data)}
-            margin={{ top: 10, right: 110, bottom: 50, left: 60, ...margin }}
+            margin={{
+              top: 10,
+              right: 10,
+              bottom: 45,
+              left: screenStore.matchMedium ? 60 : 20,
+              ...margin,
+            }}
             xScale={{ type: 'point', ...xScale }}
             yScale={{ type: 'linear', ...yScale }}
             axisTop={null}
@@ -161,6 +180,7 @@ export default class LineWrapper extends Component {
             pointBorderWidth={2}
             pointBorderColor={{ from: 'serieColor' }}
             pointLabel="y"
+            enableGridX={screenStore.matchMedium}
             pointLabelYOffset={-12}
             useMesh={true}
             enableArea={this.useArea}
@@ -168,11 +188,11 @@ export default class LineWrapper extends Component {
             sliceTooltip={getTooltipForPoint ? this.sliceTooltip : undefined}
             legends={[
               {
-                anchor: 'bottom-right',
-                direction: 'column',
+                anchor: 'bottom',
+                direction: 'row',
                 justify: false,
-                translateX: 100,
-                translateY: 0,
+                translateX: 0,
+                translateY: 35,
                 itemsSpacing: 0,
                 itemDirection: 'left-to-right',
                 itemWidth: 80,

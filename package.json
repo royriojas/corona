@@ -5,11 +5,11 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "analyze": "WEBPACK_ANALYZE=true webpack --config webpack/build.js --profile --json > stats.json",
+    "analyze": "WEBPACK_ANALYZE=true MINIFY=1 NODE_ENV=production webpack --config webpack/build.js --profile --json > stats.json",
     "analyze:vendor": "WEBPACK_ANALYZE=true webpack --config webpack/vendors.js --profile --json > stats.json",
     "pre-build": "webpack --config webpack/vendors.js",
     "build": "NODE_ENV=development npm run _build",
-    "build:prod": "NODE_ENV=production npm run _build:prod",
+    "build:prod": "MINIFY=1 NODE_ENV=production npm run _build:prod",
     "build:deps": "npm run pre-build",
     "build:watch": "npm run build -- -- --watch",
     "build:watch:tools": "npm run pre-build && MOBX_DEVTOOLS=true webpack --config webpack/build.js --watch",
@@ -22,13 +22,14 @@
     "clean": "rm -rf dist/ public/dist/",
     "start:dev": "sx 'npm run build:watch' './bnr server:start' './bnr serve'",
     "update:data": "curl https://opendata.ecdc.europa.eu/covid19/casedistribution/csv/ > data.csv && node src/resources/fixData.js",
-    "start": "npm run clean && MINIFY=1 npm run build:prod && ./bnr build:backend --production && ./bnr server:start --production"
+    "start": "npm run clean && npm run build:prod && ./bnr build:backend --production && ./bnr server:start --production"
   },
   "bnrConfig": "./tasks.js",
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@khanacademy/react-multi-select": "^0.3.3",
     "@nivo/line": "^0.61.1",
     "@redisrupt/bnr": "^5.0.2",
     "@redisrupt/eslint-red": "^7.0.0",
@@ -39,9 +40,11 @@
     "clix": "^5.0.0",
     "clix-logger": "^2.0.0",
     "core-js": "^3.6.4",
+    "cssbrush": "^0.6.3",
     "csv-parse": "^4.8.8",
     "debouncy": "^1.0.8",
     "ip": "^1.1.5",
+    "lru2": "^1.0.0",
     "luxon": "^1.22.2",
     "mkdirp": "^1.0.3",
     "mobx": "^5.15.4",
@@ -49,11 +52,10 @@
     "nodemon": "^2.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "shell-executor": "^6.0.1",
-    "webpack-deps": "file:local_modules/webpack-deps",
     "react-error-overlay": "^6.0.7",
-    "@khanacademy/react-multi-select": "^0.3.3",
-    "lru2": "^1.0.0"
+    "resize-observer-polyfill": "^1.5.1",
+    "shell-executor": "^6.0.1",
+    "webpack-deps": "file:local_modules/webpack-deps"
   },
   "dependencies": {
     "dotenv": "^8.2.0",

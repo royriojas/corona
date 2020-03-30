@@ -1,17 +1,98 @@
 .LineWrapper {
-  padding: 1rem .5rem;
+  padding: 0;
+  position: relative;
 
   h2 {
-    margin: 1rem .5rem 1.5rem;
+    font-size: 18px;
+    margin: .5rem 0 .75rem;
+  }
+
+  &.medium {
+    padding: 1rem .5rem;
+
+    .button {
+      position: absolute;
+      right: 15px;
+      top: 1.5rem;
+    }
+
+    h2 {
+      margin: 1rem 0 1.5rem;
+    }
+
+    .Controls {
+      .Field {
+        display: inline-block;
+        margin-right: 1.5rem;
+        padding: 0 1rem;
+      }
+    }
   }
 }
 
 .tooltip {
-  background: #fff;
   padding: .5rem;
   border: 1px solid #ddd;
+  background: #fff;
 }
 
 .Line {
   height: 500px;
+}
+
+.Field {
+  display: block;
+  max-width: 80%;
+  padding: 0 0 .5rem 0;
+
+  &.last {
+    padding-bottom: 0;
+  }
+
+  .label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: .5rem;
+  }
+
+  .text {
+    font-size: 13px;
+    margin-left: .825rem;
+  }
+
+  input[type='number'] {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+    display: block;
+    flex: 1;
+    text-align: right;
+    border: 1px solid #ccc;
+    min-height: 40px;
+    padding-right: .5rem;
+  }
+
+  .range {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.button {
+  font-size: 14px;
+  padding: .5rem .8rem;
+  background: rgb(20, 148, 165);
+  border: none;
+  -webkit-appearance: none;
+  color: #fff;
+
+  .buttonLabel {
+    margin-left: .5rem;
+  }
+}
+
+.Controls {
+  padding: 1rem;
+  background: #eee;
+  margin: 1rem 0;
 }

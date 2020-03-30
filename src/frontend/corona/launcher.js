@@ -7,9 +7,13 @@ import Main from './Components/Main/Main';
 import { coronaStore } from '../stores/corona-store';
 import '../common/input-method';
 import '../less/normalize.less';
+import { getScreenSizeStore } from '../common/stores/ScreenSizeStore';
+
+const screenStore = getScreenSizeStore();
 
 const stores = {
   coronaStore,
+  screenStore,
 };
 
 window.__stores = stores;

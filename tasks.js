@@ -13,7 +13,7 @@ const tasks = {
         cmd.push(' --check-only');
       }
 
-      const dirs = wrapInQuotes(['src/frontend/**/*.less']);
+      const dirs = wrapInQuotes(['src/**/*.less']);
 
       if (args.file) {
         const files = !Array.isArray(args.file) ? [args.file] : args.file;
@@ -33,7 +33,7 @@ const tasks = {
         cmd.push(' --fix');
       }
 
-      const dirs = wrapInQuotes(['./src/**/*.js', 'resources/**/*.js', 'tasks.js']);
+      const dirs = wrapInQuotes(['./src/**/*.js', 'tasks.js']);
 
       if (args.file) {
         const files = !Array.isArray(args.file) ? [args.file] : args.file;

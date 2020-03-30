@@ -26,6 +26,7 @@ const _renderView = async ({ getView, getData }) => {
   const vendorResource = addMinIfNeeded('/dist/vendor.js');
   const jsResource = addMinIfNeeded('/dist/corona.js');
   const cssResource = addMinIfNeeded('/dist/corona.css');
+  const dataResource = addMinIfNeeded('/dist/data.js');
 
   const data = getData ? getData() || {} : {};
 
@@ -42,6 +43,7 @@ const _renderView = async ({ getView, getData }) => {
       jsResource,
       cssResource,
       vendorResource,
+      dataResource,
       dev: !IS_PRODUCTION,
       ...data,
     },

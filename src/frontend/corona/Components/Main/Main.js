@@ -16,6 +16,7 @@ const cx = classnames.bind(styles);
   casesByCountry: stores.coronaStore.casesByCountry,
   getTooltipForDeathsByPoint: stores.coronaStore.getTooltipForDeathsByPoint,
   getTooltipForCasesByPoint: stores.coronaStore.getTooltipForCasesByPoint,
+  screenStore: stores.screenStore,
 }))
 @observer
 export default class Main extends Component {
@@ -24,33 +25,43 @@ export default class Main extends Component {
   }
 
   getTooltipForCases = (point, last) => {
-    const { getTooltipForCasesByPoint } = this.props;
+    const { getTooltipForCasesByPoint, screenStore } = this.props;
     const { serieId, data } = point;
     const entry = getTooltipForCasesByPoint({ serieId });
     const { x, y, date } = data;
 
-    return <LineTooltip country={entry.country} date={date} serieColor={point.serieColor} x={x} y={y} last={last} />;
+    return <LineTooltip row={screenStore.matchMedium} country={entry.country} date={date} serieColor={point.serieColor} x={x} y={y} last={last} />;
   };
 
   getTooltipForDeaths = (point, last) => {
-    const { getTooltipForDeathsByPoint } = this.props;
+    const { getTooltipForDeathsByPoint, screenStore } = this.props;
     const { serieId, data } = point;
     const entry = getTooltipForDeathsByPoint({ serieId });
     const { x, y, date } = data;
 
-    return <LineTooltip country={entry.country} date={date} serieColor={point.serieColor} x={x} y={y} last={last} />;
+    return <LineTooltip row={screenStore.matchMedium} country={entry.country} date={date} serieColor={point.serieColor} x={x} y={y} last={last} />;
   };
 
   render() {
     const { props } = this;
-    const { countries, selectCountries, selectedCountries, casesByCountry, deathsByCountry } = props;
+    const { countries, selectCountries, selectedCountries, casesByCountry, deathsByCountry, screenStore } = props;
 
     return (
-      <div className={cx('Main')}>
-        <h1>Coronavirus cases and deaths in the world</h1>
-        <MultiSelect options={countries} selected={selectedCountries} onSelectedChanged={selectCountries} />
-        <LineWrapper title="Cases by country" data={casesByCountry} getTooltipForPoint={this.getTooltipForCases} />
-        <LineWrapper title="Deaths by country" data={deathsByCountry} getTooltipForPoint={this.getTooltipForDeaths} />
+      <div className={cx('Main', { medium: screenStore.matchMedium })}>
+        <h1>COVID-19 charts</h1>
+        <div className={cx('selector')}>
+          <MultiSelect options={countries} selected={selectedCountries} onSelectedChanged={selectCountries} />
+        </div>
+        <LineWrapper screenStore={screenStore} title="Cases by country" data={casesByCountry} getTooltipForPoint={this.getTooltipForCases} />
+        <LineWrapper screenStore={screenStore} title="Deaths by country" data={deathsByCountry} getTooltipForPoint={this.getTooltipForDeaths} />
+        <div className={cx('footer')}>
+          <p>
+            <span>{'Made by '}</span>
+            <a target="blank" href="https://twitter.com/royriojas">
+              @royriojas
+            </a>
+          </p>
+        </div>
       </div>
     );
   }
