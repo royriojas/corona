@@ -21,8 +21,8 @@ const minimizer = isMinified
   : [];
 
 const { NODE_ENV, CLEAN } = process.env;
-const isProd = NODE_ENV === 'prod' || NODE_ENV === 'production';
-const hasClean = CLEAN === '1' || !isProd;
+const isProd = NODE_ENV === 'production';
+const shouldCleanDistFolder = CLEAN === '1' || !isProd;
 
 module.exports = {
   mode: isProd ? 'production' : 'development',
@@ -62,7 +62,7 @@ module.exports = {
     ];
 
     // clean dist folder
-    if (hasClean) {
+    if (shouldCleanDistFolder) {
       plugins.push(new CleanWebpackPlugin(rmdir));
     }
     // run webpack-bundle-analyzer

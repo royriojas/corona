@@ -17,10 +17,10 @@ const output = {
   filename: fileName(),
 };
 
-const isNodeEnvDev = nodeEnv === 'development';
+const isNodeEnvDev = nodeEnv !== 'production';
 
 if (isNodeEnvDev) {
-  devtool = 'eval-source-map';
+  devtool = 'cheap-module-source-map';
   output.devtoolModuleFilenameTemplate = info => resolve(__dirname, info.absoluteResourcePath);
 }
 
@@ -113,7 +113,7 @@ const cfg = merge.smart(baseConfig, {
     const { MOBX_DEVTOOLS, WEBPACK_ANALYZE } = process.env;
 
     const NODE_ENV = isNodeEnvDev ? '"development"' : '"production"';
-    const mobx_dev_tools = MOBX_DEVTOOLS === 'true' && isNodeEnvDev ? 'true' : 'false';
+    const mobxDevTools = MOBX_DEVTOOLS === 'true' && isNodeEnvDev ? 'true' : 'false';
 
     const plugins = [
       new MiniCssExtractPlugin({ filename: fileName('css') }),
@@ -121,7 +121,7 @@ const cfg = merge.smart(baseConfig, {
         'process.env': {
           NODE_ENV,
         },
-        __MOBX_DEV_TOOLS__: mobx_dev_tools,
+        __MOBX_DEV_TOOLS__: mobxDevTools,
       }),
     ];
 

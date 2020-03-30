@@ -32,7 +32,7 @@ class CountryEntry {
 
     const cumulativeSum = sum => value => {
       sum = sum += value.y;
-      return { x: value.x, y: sum };
+      return { ...value, y: sum };
     };
 
     const sum1 = cumulativeSum(0);
@@ -40,6 +40,7 @@ class CountryEntry {
 
     return {
       ...this.data,
+      country: this.data.country.replace(/_/g, ' '),
       id: this.data.geoId,
       deaths: ret.deaths
         .sort((a, b) => (a.x < b.x ? -1 : 1))
@@ -114,8 +115,8 @@ class CountryList {
         const { id, cases, deaths, country, ...rest } = entry;
 
         acc.countries.push({ value: id, label: country });
-        acc.cases.push({ id, ...rest, data: cases });
-        acc.deaths.push({ id, ...rest, data: deaths });
+        acc.cases.push({ id, country, ...rest, data: cases });
+        acc.deaths.push({ id, country, ...rest, data: deaths });
         return acc;
       },
       { cases: [], deaths: [], countries: [] },

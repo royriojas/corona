@@ -17,7 +17,7 @@ const cfg = merge.strategy({
   mode: 'development',
   devtool: 'eval-source-map',
   entry: {
-    'ai-network': ['react-hot-loader/patch', 'webpack-hot-middleware/client?path=/__webpack_hmr'],
+    corona: ['react-hot-loader/patch', 'webpack-hot-middleware/client?path=/__webpack_hmr'],
   },
   output: {
     publicPath: '/dist/',

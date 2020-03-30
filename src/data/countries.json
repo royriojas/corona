@@ -16,12 +16,8 @@
     "label": "Andorra"
   },
   {
-    "value": "AR",
-    "label": "Argentina"
-  },
-  {
     "value": "AG",
-    "label": "Antigua_and_Barbuda"
+    "label": "Antigua and Barbuda"
   },
   {
     "value": "DZ",
@@ -30,6 +26,10 @@
   {
     "value": "AI",
     "label": "Anguilla"
+  },
+  {
+    "value": "AR",
+    "label": "Argentina"
   },
   {
     "value": "AM",
@@ -97,7 +97,7 @@
   },
   {
     "value": "BA",
-    "label": "Bosnia_and_Herzegovina"
+    "label": "Bosnia and Herzegovina"
   },
   {
     "value": "BR",
@@ -105,11 +105,11 @@
   },
   {
     "value": "VG",
-    "label": "British_Virgin_Islands"
+    "label": "British Virgin Islands"
   },
   {
     "value": "BN",
-    "label": "Brunei_Darussalam"
+    "label": "Brunei Darussalam"
   },
   {
     "value": "BG",
@@ -117,7 +117,7 @@
   },
   {
     "value": "BF",
-    "label": "Burkina_Faso"
+    "label": "Burkina Faso"
   },
   {
     "value": "KH",
@@ -133,19 +133,19 @@
   },
   {
     "value": "CV",
-    "label": "Cape_Verde"
+    "label": "Cape Verde"
   },
   {
     "value": "JPG11668",
-    "label": "Cases_on_an_international_conveyance_Japan"
+    "label": "Cases on an international conveyance Japan"
   },
   {
     "value": "KY",
-    "label": "Cayman_Islands"
+    "label": "Cayman Islands"
   },
   {
     "value": "CF",
-    "label": "Central_African_Republic"
+    "label": "Central African Republic"
   },
   {
     "value": "TD",
@@ -169,11 +169,11 @@
   },
   {
     "value": "CR",
-    "label": "Costa_Rica"
+    "label": "Costa Rica"
   },
   {
     "value": "CI",
-    "label": "Cote_dIvoire"
+    "label": "Cote dIvoire"
   },
   {
     "value": "HR",
@@ -193,11 +193,11 @@
   },
   {
     "value": "CZ",
-    "label": "Czech_Republic"
+    "label": "Czech Republic"
   },
   {
     "value": "CD",
-    "label": "Democratic_Republic_of_the_Congo"
+    "label": "Democratic Republic of the Congo"
   },
   {
     "value": "DK",
@@ -213,7 +213,7 @@
   },
   {
     "value": "DO",
-    "label": "Dominican_Republic"
+    "label": "Dominican Republic"
   },
   {
     "value": "EC",
@@ -225,11 +225,11 @@
   },
   {
     "value": "SV",
-    "label": "El_Salvador"
+    "label": "El Salvador"
   },
   {
     "value": "GQ",
-    "label": "Equatorial_Guinea"
+    "label": "Equatorial Guinea"
   },
   {
     "value": "ER",
@@ -249,7 +249,7 @@
   },
   {
     "value": "FO",
-    "label": "Faroe_Islands"
+    "label": "Faroe Islands"
   },
   {
     "value": "FJ",
@@ -265,7 +265,7 @@
   },
   {
     "value": "PF",
-    "label": "French_Polynesia"
+    "label": "French Polynesia"
   },
   {
     "value": "GA",
@@ -321,7 +321,7 @@
   },
   {
     "value": "GW",
-    "label": "Guinea_Bissau"
+    "label": "Guinea Bissau"
   },
   {
     "value": "GY",
@@ -333,7 +333,7 @@
   },
   {
     "value": "VA",
-    "label": "Holy_See"
+    "label": "Holy See"
   },
   {
     "value": "HN",
@@ -369,7 +369,7 @@
   },
   {
     "value": "IM",
-    "label": "Isle_of_Man"
+    "label": "Isle of Man"
   },
   {
     "value": "IL",
@@ -525,11 +525,11 @@
   },
   {
     "value": "NC",
-    "label": "New_Caledonia"
+    "label": "New Caledonia"
   },
   {
     "value": "NZ",
-    "label": "New_Zealand"
+    "label": "New Zealand"
   },
   {
     "value": "NI",
@@ -545,7 +545,7 @@
   },
   {
     "value": "MK",
-    "label": "North_Macedonia"
+    "label": "North Macedonia"
   },
   {
     "value": "NO",
@@ -569,7 +569,7 @@
   },
   {
     "value": "PG",
-    "label": "Papua_New_Guinea"
+    "label": "Papua New Guinea"
   },
   {
     "value": "PY",
@@ -593,7 +593,7 @@
   },
   {
     "value": "PR",
-    "label": "Puerto_Rico"
+    "label": "Puerto Rico"
   },
   {
     "value": "QA",
@@ -613,23 +613,23 @@
   },
   {
     "value": "KN",
-    "label": "Saint_Kitts_and_Nevis"
+    "label": "Saint Kitts and Nevis"
   },
   {
     "value": "LC",
-    "label": "Saint_Lucia"
+    "label": "Saint Lucia"
   },
   {
     "value": "VC",
-    "label": "Saint_Vincent_and_the_Grenadines"
+    "label": "Saint Vincent and the Grenadines"
   },
   {
     "value": "SM",
-    "label": "San_Marino"
+    "label": "San Marino"
   },
   {
     "value": "SA",
-    "label": "Saudi_Arabia"
+    "label": "Saudi Arabia"
   },
   {
     "value": "SN",
@@ -649,7 +649,7 @@
   },
   {
     "value": "SX",
-    "label": "Sint_Maarten"
+    "label": "Sint Maarten"
   },
   {
     "value": "SK",
@@ -665,11 +665,11 @@
   },
   {
     "value": "ZA",
-    "label": "South_Africa"
+    "label": "South Africa"
   },
   {
     "value": "KR",
-    "label": "South_Korea"
+    "label": "South Korea"
   },
   {
     "value": "ES",
@@ -677,7 +677,7 @@
   },
   {
     "value": "LK",
-    "label": "Sri_Lanka"
+    "label": "Sri Lanka"
   },
   {
     "value": "SD",
@@ -709,7 +709,7 @@
   },
   {
     "value": "TL",
-    "label": "Timor_Leste"
+    "label": "Timor Leste"
   },
   {
     "value": "TG",
@@ -717,7 +717,7 @@
   },
   {
     "value": "TT",
-    "label": "Trinidad_and_Tobago"
+    "label": "Trinidad and Tobago"
   },
   {
     "value": "TN",
@@ -729,7 +729,7 @@
   },
   {
     "value": "TC",
-    "label": "Turks_and_Caicos_islands"
+    "label": "Turks and Caicos islands"
   },
   {
     "value": "UG",
@@ -741,23 +741,23 @@
   },
   {
     "value": "AE",
-    "label": "United_Arab_Emirates"
+    "label": "United Arab Emirates"
   },
   {
     "value": "UK",
-    "label": "United_Kingdom"
+    "label": "United Kingdom"
   },
   {
     "value": "TZ",
-    "label": "United_Republic_of_Tanzania"
+    "label": "United Republic of Tanzania"
   },
   {
     "value": "US",
-    "label": "United_States_of_America"
+    "label": "United States of America"
   },
   {
     "value": "VI",
-    "label": "United_States_Virgin_Islands"
+    "label": "United States Virgin Islands"
   },
   {
     "value": "UY",

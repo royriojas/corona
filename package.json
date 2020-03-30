@@ -21,6 +21,7 @@
     "_build:prod": "npm run build:deps && webpack --config webpack/build.js",
     "clean": "rm -rf dist/ public/dist/",
     "start:dev": "sx 'npm run build:watch' './bnr server:start' './bnr serve'",
+    "update:data": "curl https://opendata.ecdc.europa.eu/covid19/casedistribution/csv/ > data.csv && node src/resources/fixData.js",
     "start": "npm run clean && MINIFY=1 npm run build:prod && ./bnr build:backend --production && ./bnr server:start --production"
   },
   "bnrConfig": "./tasks.js",
@@ -49,10 +50,12 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "shell-executor": "^6.0.1",
-    "webpack-deps": "file:local_modules/webpack-deps"
+    "webpack-deps": "file:local_modules/webpack-deps",
+    "react-error-overlay": "^6.0.7",
+    "@khanacademy/react-multi-select": "^0.3.3",
+    "lru2": "^1.0.0"
   },
   "dependencies": {
-    "@khanacademy/react-multi-select": "^0.3.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "http-proxy": "^1.18.0",

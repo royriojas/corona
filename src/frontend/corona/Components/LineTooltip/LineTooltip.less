@@ -1,0 +1,78 @@
+.countryInfo {
+  margin: 0;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: .125rem;
+  margin-bottom: .125rem;
+}
+
+.pointInfo {
+  margin: 0;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 12px;
+}
+
+.count {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 18px;
+  margin: 0;
+  text-align: right;
+  width: 100%;
+}
+
+.box {
+  width: 22px;
+  height: 22px;
+}
+
+.countryBlock {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: .6rem;
+
+  &.last {
+    margin-bottom: 0;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    content: " ";
+    bottom: -5px;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px dashed #ddd;
+    left: 0;
+  }
+}
+
+.block-1 {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 3px;
+}
+
+.block-2 {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding-right: .825rem;
+}
+
+.block-3 {
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-left: .825rem;
+  padding-right: .425rem;
+  background: #eee;
+}
