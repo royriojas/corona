@@ -13,7 +13,6 @@ coverage
 keys
 npm-debug.log
 node_modules
-package-lock.json
 params.loc.js
 stats.json
 
