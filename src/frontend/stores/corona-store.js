@@ -9,7 +9,7 @@ class CoronaStore {
   _countries = [];
 
   @observable.shallow
-  _selectedCountries = ['PE', 'US', 'IT'];
+  _selectedCountries = ['Peru', 'US', 'Ecuador', 'Italy'];
 
   constructor() {
     this._countries = countriesData;
