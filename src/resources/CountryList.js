@@ -20,36 +20,24 @@ class CountryEntry {
   serialize() {
     const ret = this.dataPoints.reduce(
       (acc, entry) => {
-        const { date, cases, deaths } = entry;
+        const { date, cases, deaths, recovered } = entry;
 
         acc.cases.push({ x: date, y: cases });
         acc.deaths.push({ x: date, y: deaths });
+        acc.recovered.push({ x: date, y: recovered });
 
         return acc;
       },
-      { deaths: [], cases: [] },
+      { deaths: [], cases: [], recovered: [] },
     );
-
-    const cumulativeSum = sum => value => {
-      sum = sum += value.y;
-      return { ...value, y: sum };
-    };
-
-    const sum1 = cumulativeSum(0);
-    const sum2 = cumulativeSum(2);
 
     return {
       ...this.data,
       country: this.data.country.replace(/_/g, ' '),
       id: this.data.geoId,
-      deaths: ret.deaths
-        .sort((a, b) => (a.x < b.x ? -1 : 1))
-        .map((entry, index) => ({ ...entry, date: entry.x.toISODate(), x: `day-${index}` }))
-        .map(sum1),
-      cases: ret.cases
-        .sort((a, b) => (a.x < b.x ? -1 : 1))
-        .map((entry, index) => ({ ...entry, date: entry.x.toISODate(), x: `day-${index}` }))
-        .map(sum2),
+      deaths: ret.deaths.sort((a, b) => (a.x < b.x ? -1 : 1)).map((entry, index) => ({ ...entry, date: entry.x.toISODate(), x: `day-${index}` })),
+      cases: ret.cases.sort((a, b) => (a.x < b.x ? -1 : 1)).map((entry, index) => ({ ...entry, date: entry.x.toISODate(), x: `day-${index}` })),
+      recovered: ret.recovered.sort((a, b) => (a.x < b.x ? -1 : 1)).map((entry, index) => ({ ...entry, date: entry.x.toISODate(), x: `day-${index}` })),
     };
   }
 }
@@ -112,14 +100,15 @@ class CountryList {
     return Array.from(this.dataMap.values()).reduce(
       (acc, countryEntry) => {
         const entry = countryEntry.serialize();
-        const { id, cases, deaths, country, ...rest } = entry;
+        const { id, cases, deaths, recovered, country, ...rest } = entry;
 
         acc.countries.push({ value: id, label: country });
         acc.cases.push({ id, country, ...rest, data: cases });
         acc.deaths.push({ id, country, ...rest, data: deaths });
+        acc.recovered.push({ id, country, ...rest, data: recovered });
         return acc;
       },
-      { cases: [], deaths: [], countries: [] },
+      { cases: [], deaths: [], countries: [], recovered: [] },
     );
   }
 }

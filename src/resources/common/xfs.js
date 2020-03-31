@@ -1,18 +1,10 @@
 import fs from 'fs';
-import path from 'path';
-import mkdir from 'mkdirp';
+import thenify from './thenify';
+import { tryParse } from '../../backend/common/try-parse';
 
-export const existsSync = fs.existsSync; // eslint-disable-line prefer-destructuring
+export const read = thenify(fs.readFile);
 
-export const readSync = (file, opts = {}) => {
-  if (!opts.encoding) {
-    opts.encoding = 'utf8';
-  }
-  return fs.readFileSync(file, opts);
-};
-
-export const writeSync = (file, contents, options) => {
-  const dir = path.dirname(file);
-  mkdir.sync(dir);
-  return fs.writeFileSync(file, contents, options);
+export const readJSON = async file => {
+  const content = await read(file, { encoding: 'utf8' });
+  return tryParse(content);
 };
