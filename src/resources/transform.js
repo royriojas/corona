@@ -66,7 +66,7 @@ const processByLine = async ({ input, countriesFile, casesFile, deathsFile, reco
     const countryData = jsonData[country];
     countryData.forEach(rec => {
       const record = {
-        date: DateTime.fromFormat(rec.date, 'yyyy-MM-dd'),
+        date: DateTime.fromFormat(rec.date, 'yyyy-M-d'),
         cases: rec.confirmed,
         deaths: rec.deaths,
         geoId: country,

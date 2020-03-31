@@ -46,7 +46,7 @@ export default class Main extends Component {
     const { props } = this;
     const { countries, selectCountries, selectedCountries, casesByCountry, deathsByCountry, screenStore } = props;
 
-    const link = 'https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide';
+    const link = 'https://github.com/pomber/covid19';
     const githubRepo = 'https://github.com/royriojas/corona/';
 
     return (
@@ -67,7 +67,7 @@ export default class Main extends Component {
           <p className={cx('title')}>
             The data for these charts come from the{' '}
             <a target="blank" href={link}>
-              European Centre for Disease Prevention and Control
+              {link}
             </a>
             {'. '}
           </p>
