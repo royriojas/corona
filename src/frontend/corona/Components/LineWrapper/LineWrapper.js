@@ -16,6 +16,9 @@ export default class LineWrapper extends Component {
   useArea = false;
 
   @observable
+  _divideByMillion = true;
+
+  @observable
   useRange = true;
 
   @observable
@@ -39,6 +42,11 @@ export default class LineWrapper extends Component {
   get maxIndex() {
     return Number.parseFloat(this._maxIndex) || this._maxCalculatedIndex || this.getMaxIndex(this.props.data);
   }
+
+  @action
+  updateDivideByMillion = e => {
+    this._divideByMillion = e.target.checked;
+  };
 
   sliceTooltip = ({ slice }) => {
     const points = slice?.points;
@@ -94,7 +102,7 @@ export default class LineWrapper extends Component {
   @action
   updateMaxCalculated = data => {
     const maxIndex = this.getMaxIndex(data);
-
+    this._divideByMillion = false;
     this._maxCalculatedIndex = maxIndex;
   };
 
@@ -109,9 +117,22 @@ export default class LineWrapper extends Component {
   }
 
   filterData = data => {
-    if (!this.useRange) return data;
-    return data.map(entry => ({ ...entry, data: entry.data.slice(this.minIndex, this.maxIndex) }));
+    let filtered = !this.useRange ? data : data.map(entry => ({ ...entry, data: entry.data.slice(this.minIndex, this.maxIndex) }));
+    if (this._divideByMillion) {
+      filtered = filtered.map(entry => ({
+        ...entry,
+        data: entry.data.map(datum => {
+          const y = (datum.y / entry.population) * 1000000;
+          return { ...datum, y };
+        }),
+      }));
+    }
+    return filtered;
   };
+
+  get canDivideByMillion() {
+    return this.props.data.every(country => country.population && !Number.isNaN(country.population));
+  }
 
   render() {
     const { props } = this;
@@ -139,6 +160,15 @@ export default class LineWrapper extends Component {
               <span>
                 <input type="checkbox" checked={this.showAreaUnderLine} onChange={this.toggleArea} />
                 <span className={cx('text')}>Show area under line</span>
+              </span>
+            </label>
+            <label className={cx('Field')}>
+              <span className={cx('label')}>By million of people</span>
+              <span>
+                <input type="checkbox" disabled={!this.canDivideByMillion} checked={this._divideByMillion} onChange={this.updateDivideByMillion} />
+                <span className={cx('text')}>
+                  Based on the population of each country (<a href="https://github.com/samayo/country-json">country-json</a>)
+                </span>
               </span>
             </label>
             <label className={cx('Field')}>

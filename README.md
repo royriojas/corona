@@ -17,3 +17,6 @@ A super simple web page to compare the covid-19 progress on several countries
 
 ## Update the data
 - run `npm run update:data` and rebuild the app. It will fetch the newer data from https://pomber.github.io/covid19
+
+## The poulation data per country
+- Population data from https://github.com/samayo/country-json
