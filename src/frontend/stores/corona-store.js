@@ -3,6 +3,7 @@ import lru from 'lru2';
 import countriesData from '../../data/countries.json';
 import cases from '../../data/cases.json';
 import deaths from '../../data/deaths.json';
+import recovered from '../../data/recovered.json';
 
 class CoronaStore {
   @observable.shallow
@@ -15,9 +16,9 @@ class CoronaStore {
     this._countries = countriesData;
     this._deaths = deaths;
     this._cases = cases;
+    this._recovered = recovered;
 
-    this._lruByDeaths = lru.create({ limit: 500 });
-    this._lruByCases = lru.create({ limit: 500 });
+    this._lruCountries = lru.create({ limit: 500 });
   }
 
   @computed
@@ -25,36 +26,17 @@ class CoronaStore {
     return this._countries;
   }
 
-  getTooltipForDeathsByPoint = ({ serieId, index }) => {
-    let tooltipData = this._lruByDeaths.get(serieId);
-    if (!tooltipData) {
-      const entry = this._deaths.find(c => c.id === serieId);
-      const { country } = entry || {};
+  getCountryById = id => {
+    let country = this._lruCountries.get(id);
+    if (!country) {
+      country = this._countries.find(c => c.value === id);
 
-      const dataPoint = entry?.data?.[index] || {};
+      this._lruCountries.set(id, country);
 
-      tooltipData = { country, ...dataPoint };
-
-      this._lruByDeaths.set(serieId, tooltipData);
-
-      return tooltipData;
+      return country;
     }
 
-    return tooltipData;
-  };
-
-  getTooltipForCasesByPoint = ({ serieId }) => {
-    const key = serieId;
-    let entry = this._lruByCases.get(key);
-    if (!entry) {
-      entry = this._cases.find(c => c.id === serieId);
-
-      this._lruByCases.set(key, entry);
-
-      return entry;
-    }
-
-    return entry;
+    return country;
   };
 
   @computed
@@ -91,6 +73,17 @@ class CoronaStore {
   get casesByCountry() {
     if (this.selectedCountries.length === 0) return [];
     return this._cases.filter(entry => this.selectedCountries.includes(entry.id));
+  }
+
+  @computed
+  get recoveredByCountry() {
+    if (this.selectedCountries.length === 0) return [];
+    return this._recovered
+      .filter(entry => this.selectedCountries.includes(entry.id))
+      .map(entry => ({
+        ...entry,
+        data: this.filterEmptyAtBegining(entry.data),
+      }));
   }
 }
 

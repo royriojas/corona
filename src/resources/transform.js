@@ -57,8 +57,9 @@ const writeInChunks = async (filePath, data) => {
   });
 };
 
-const processByLine = async ({ input, countriesFile, casesFile, deathsFile, recoveredFile }) => {
+const processByLine = async ({ input, countriesFile, casesFile, deathsFile, recoveredFile, populationInput }) => {
   const jsonData = await readJSON(input);
+  const populationByCountry = await readJSON(populationInput);
 
   const countryList = new CountryList();
 
@@ -76,6 +77,8 @@ const processByLine = async ({ input, countriesFile, casesFile, deathsFile, reco
       };
       countryList.push(record);
     });
+
+    countryList.updatePopulation(country, populationByCountry[country]);
   });
 
   const data = countryList.serialize();
@@ -89,6 +92,7 @@ const processByLine = async ({ input, countriesFile, casesFile, deathsFile, reco
 const main = async () => {
   await processByLine({
     input: './data.json',
+    populationInput: './population.json',
     countriesFile: './src/data/countries.json',
     casesFile: './src/data/cases.json',
     deathsFile: './src/data/deaths.json',

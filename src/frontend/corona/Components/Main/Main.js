@@ -14,8 +14,8 @@ const cx = classnames.bind(styles);
   selectedCountries: stores.coronaStore.selectedCountries,
   deathsByCountry: stores.coronaStore.deathsByCountry,
   casesByCountry: stores.coronaStore.casesByCountry,
-  getTooltipForDeathsByPoint: stores.coronaStore.getTooltipForDeathsByPoint,
-  getTooltipForCasesByPoint: stores.coronaStore.getTooltipForCasesByPoint,
+  recoveredByCountry: stores.coronaStore.recoveredByCountry,
+  getCountryById: stores.coronaStore.getCountryById,
   screenStore: stores.screenStore,
 }))
 @observer
@@ -24,27 +24,18 @@ export default class Main extends Component {
     console.log('>>> error', error, errorInfo);
   }
 
-  getTooltipForCases = (point, last) => {
-    const { getTooltipForCasesByPoint, screenStore } = this.props;
+  getTooltip = (point, last) => {
+    const { getCountryById, screenStore } = this.props;
     const { serieId, data } = point;
-    const entry = getTooltipForCasesByPoint({ serieId });
+    const entry = getCountryById(serieId);
     const { x, y, date } = data;
 
-    return <LineTooltip row={screenStore.matchMedium} country={entry.country} date={date} serieColor={point.serieColor} x={x} y={y} last={last} />;
-  };
-
-  getTooltipForDeaths = (point, last) => {
-    const { getTooltipForDeathsByPoint, screenStore } = this.props;
-    const { serieId, data } = point;
-    const entry = getTooltipForDeathsByPoint({ serieId });
-    const { x, y, date } = data;
-
-    return <LineTooltip row={screenStore.matchMedium} country={entry.country} date={date} serieColor={point.serieColor} x={x} y={y} last={last} />;
+    return <LineTooltip row={screenStore.matchMedium} country={entry.value} date={date} serieColor={point.serieColor} x={x} y={y} last={last} />;
   };
 
   render() {
     const { props } = this;
-    const { countries, selectCountries, selectedCountries, casesByCountry, deathsByCountry, screenStore } = props;
+    const { countries, selectCountries, selectedCountries, casesByCountry, deathsByCountry, screenStore, recoveredByCountry } = props;
 
     const link = 'https://github.com/pomber/covid19';
     const githubRepo = 'https://github.com/royriojas/corona/';
@@ -79,8 +70,9 @@ export default class Main extends Component {
           <p className={cx('label')}>Countries to compare</p>
           <MultiSelect options={countries} selected={selectedCountries} onSelectedChanged={selectCountries} />
         </div>
-        <LineWrapper screenStore={screenStore} title="Cases by country" data={casesByCountry} getTooltipForPoint={this.getTooltipForCases} />
-        <LineWrapper screenStore={screenStore} title="Deaths by country" data={deathsByCountry} getTooltipForPoint={this.getTooltipForDeaths} />
+        <LineWrapper screenStore={screenStore} title="Cases per country" data={casesByCountry} getTooltipForPoint={this.getTooltip} />
+        <LineWrapper screenStore={screenStore} title="Deaths per country" data={deathsByCountry} getTooltipForPoint={this.getTooltip} />
+        <LineWrapper screenStore={screenStore} title="Recovered per country" data={recoveredByCountry} getTooltipForPoint={this.getTooltip} />
         <div className={cx('footer')}>
           <p>
             <span>{'Made by '}</span>

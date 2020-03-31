@@ -3,6 +3,7 @@
     "id": "Afghanistan",
     "country": "Afghanistan",
     "code": "Afghanistan",
+    "population": 35530081,
     "geoId": "Afghanistan",
     "data": [
       {
@@ -356,6 +357,7 @@
     "id": "Albania",
     "country": "Albania",
     "code": "Albania",
+    "population": 2930187,
     "geoId": "Albania",
     "data": [
       {
@@ -709,6 +711,7 @@
     "id": "Algeria",
     "country": "Algeria",
     "code": "Algeria",
+    "population": 41318142,
     "geoId": "Algeria",
     "data": [
       {
@@ -1062,6 +1065,7 @@
     "id": "Andorra",
     "country": "Andorra",
     "code": "Andorra",
+    "population": 76965,
     "geoId": "Andorra",
     "data": [
       {
@@ -1415,6 +1419,7 @@
     "id": "Angola",
     "country": "Angola",
     "code": "Angola",
+    "population": 29784193,
     "geoId": "Angola",
     "data": [
       {
@@ -1768,6 +1773,7 @@
     "id": "Antigua and Barbuda",
     "country": "Antigua and Barbuda",
     "code": "Antigua and Barbuda",
+    "population": 102012,
     "geoId": "Antigua and Barbuda",
     "data": [
       {
@@ -2121,6 +2127,7 @@
     "id": "Argentina",
     "country": "Argentina",
     "code": "Argentina",
+    "population": 44271041,
     "geoId": "Argentina",
     "data": [
       {
@@ -2474,6 +2481,7 @@
     "id": "Armenia",
     "country": "Armenia",
     "code": "Armenia",
+    "population": 2930450,
     "geoId": "Armenia",
     "data": [
       {
@@ -2827,6 +2835,7 @@
     "id": "Australia",
     "country": "Australia",
     "code": "Australia",
+    "population": 24450561,
     "geoId": "Australia",
     "data": [
       {
@@ -3180,6 +3189,7 @@
     "id": "Austria",
     "country": "Austria",
     "code": "Austria",
+    "population": 8735453,
     "geoId": "Austria",
     "data": [
       {
@@ -3533,6 +3543,7 @@
     "id": "Azerbaijan",
     "country": "Azerbaijan",
     "code": "Azerbaijan",
+    "population": 9827589,
     "geoId": "Azerbaijan",
     "data": [
       {
@@ -3886,6 +3897,7 @@
     "id": "Bahamas",
     "country": "Bahamas",
     "code": "Bahamas",
+    "population": 395361,
     "geoId": "Bahamas",
     "data": [
       {
@@ -4239,6 +4251,7 @@
     "id": "Bahrain",
     "country": "Bahrain",
     "code": "Bahrain",
+    "population": 1492584,
     "geoId": "Bahrain",
     "data": [
       {
@@ -4592,6 +4605,7 @@
     "id": "Bangladesh",
     "country": "Bangladesh",
     "code": "Bangladesh",
+    "population": 164669751,
     "geoId": "Bangladesh",
     "data": [
       {
@@ -4945,6 +4959,7 @@
     "id": "Barbados",
     "country": "Barbados",
     "code": "Barbados",
+    "population": 285719,
     "geoId": "Barbados",
     "data": [
       {
@@ -5298,6 +5313,7 @@
     "id": "Belarus",
     "country": "Belarus",
     "code": "Belarus",
+    "population": 9468338,
     "geoId": "Belarus",
     "data": [
       {
@@ -5651,6 +5667,7 @@
     "id": "Belgium",
     "country": "Belgium",
     "code": "Belgium",
+    "population": 11429336,
     "geoId": "Belgium",
     "data": [
       {
@@ -6004,6 +6021,7 @@
     "id": "Benin",
     "country": "Benin",
     "code": "Benin",
+    "population": 11175692,
     "geoId": "Benin",
     "data": [
       {
@@ -6357,6 +6375,7 @@
     "id": "Bhutan",
     "country": "Bhutan",
     "code": "Bhutan",
+    "population": 807610,
     "geoId": "Bhutan",
     "data": [
       {
@@ -6710,6 +6729,7 @@
     "id": "Bolivia",
     "country": "Bolivia",
     "code": "Bolivia",
+    "population": 11051600,
     "geoId": "Bolivia",
     "data": [
       {
@@ -7063,6 +7083,7 @@
     "id": "Bosnia and Herzegovina",
     "country": "Bosnia and Herzegovina",
     "code": "Bosnia and Herzegovina",
+    "population": 3507017,
     "geoId": "Bosnia and Herzegovina",
     "data": [
       {
@@ -7416,6 +7437,7 @@
     "id": "Brazil",
     "country": "Brazil",
     "code": "Brazil",
+    "population": 209288278,
     "geoId": "Brazil",
     "data": [
       {
@@ -7769,6 +7791,7 @@
     "id": "Brunei",
     "country": "Brunei",
     "code": "Brunei",
+    "population": 428697,
     "geoId": "Brunei",
     "data": [
       {
@@ -8122,6 +8145,7 @@
     "id": "Bulgaria",
     "country": "Bulgaria",
     "code": "Bulgaria",
+    "population": 7084571,
     "geoId": "Bulgaria",
     "data": [
       {
@@ -8475,6 +8499,7 @@
     "id": "Burkina Faso",
     "country": "Burkina Faso",
     "code": "Burkina Faso",
+    "population": 19193382,
     "geoId": "Burkina Faso",
     "data": [
       {
@@ -9181,6 +9206,7 @@
     "id": "Cambodia",
     "country": "Cambodia",
     "code": "Cambodia",
+    "population": 16005373,
     "geoId": "Cambodia",
     "data": [
       {
@@ -9534,6 +9560,7 @@
     "id": "Cameroon",
     "country": "Cameroon",
     "code": "Cameroon",
+    "population": 24053727,
     "geoId": "Cameroon",
     "data": [
       {
@@ -9887,6 +9914,7 @@
     "id": "Canada",
     "country": "Canada",
     "code": "Canada",
+    "population": 36624199,
     "geoId": "Canada",
     "data": [
       {
@@ -10240,6 +10268,7 @@
     "id": "Central African Republic",
     "country": "Central African Republic",
     "code": "Central African Republic",
+    "population": 4659080,
     "geoId": "Central African Republic",
     "data": [
       {
@@ -10593,6 +10622,7 @@
     "id": "Chad",
     "country": "Chad",
     "code": "Chad",
+    "population": 14899994,
     "geoId": "Chad",
     "data": [
       {
@@ -10946,6 +10976,7 @@
     "id": "Chile",
     "country": "Chile",
     "code": "Chile",
+    "population": 18054726,
     "geoId": "Chile",
     "data": [
       {
@@ -11299,6 +11330,7 @@
     "id": "China",
     "country": "China",
     "code": "China",
+    "population": 1409517397,
     "geoId": "China",
     "data": [
       {
@@ -11652,6 +11684,7 @@
     "id": "Colombia",
     "country": "Colombia",
     "code": "Colombia",
+    "population": 49065615,
     "geoId": "Colombia",
     "data": [
       {
@@ -12711,6 +12744,7 @@
     "id": "Costa Rica",
     "country": "Costa Rica",
     "code": "Costa Rica",
+    "population": 4905769,
     "geoId": "Costa Rica",
     "data": [
       {
@@ -13417,6 +13451,7 @@
     "id": "Croatia",
     "country": "Croatia",
     "code": "Croatia",
+    "population": 4189353,
     "geoId": "Croatia",
     "data": [
       {
@@ -14123,6 +14158,7 @@
     "id": "Cuba",
     "country": "Cuba",
     "code": "Cuba",
+    "population": 11484636,
     "geoId": "Cuba",
     "data": [
       {
@@ -14476,6 +14512,7 @@
     "id": "Cyprus",
     "country": "Cyprus",
     "code": "Cyprus",
+    "population": 1179551,
     "geoId": "Cyprus",
     "data": [
       {
@@ -15182,6 +15219,7 @@
     "id": "Denmark",
     "country": "Denmark",
     "code": "Denmark",
+    "population": 5733551,
     "geoId": "Denmark",
     "data": [
       {
@@ -15535,6 +15573,7 @@
     "id": "Djibouti",
     "country": "Djibouti",
     "code": "Djibouti",
+    "population": 956985,
     "geoId": "Djibouti",
     "data": [
       {
@@ -15888,6 +15927,7 @@
     "id": "Dominican Republic",
     "country": "Dominican Republic",
     "code": "Dominican Republic",
+    "population": 10766998,
     "geoId": "Dominican Republic",
     "data": [
       {
@@ -16241,6 +16281,7 @@
     "id": "Ecuador",
     "country": "Ecuador",
     "code": "Ecuador",
+    "population": 16624858,
     "geoId": "Ecuador",
     "data": [
       {
@@ -16594,6 +16635,7 @@
     "id": "Egypt",
     "country": "Egypt",
     "code": "Egypt",
+    "population": 97553151,
     "geoId": "Egypt",
     "data": [
       {
@@ -16947,6 +16989,7 @@
     "id": "El Salvador",
     "country": "El Salvador",
     "code": "El Salvador",
+    "population": 6377853,
     "geoId": "El Salvador",
     "data": [
       {
@@ -17300,6 +17343,7 @@
     "id": "Equatorial Guinea",
     "country": "Equatorial Guinea",
     "code": "Equatorial Guinea",
+    "population": 1267689,
     "geoId": "Equatorial Guinea",
     "data": [
       {
@@ -17653,6 +17697,7 @@
     "id": "Eritrea",
     "country": "Eritrea",
     "code": "Eritrea",
+    "population": 5068831,
     "geoId": "Eritrea",
     "data": [
       {
@@ -18006,6 +18051,7 @@
     "id": "Estonia",
     "country": "Estonia",
     "code": "Estonia",
+    "population": 1309632,
     "geoId": "Estonia",
     "data": [
       {
@@ -18712,6 +18758,7 @@
     "id": "Ethiopia",
     "country": "Ethiopia",
     "code": "Ethiopia",
+    "population": 104957438,
     "geoId": "Ethiopia",
     "data": [
       {
@@ -19418,6 +19465,7 @@
     "id": "Finland",
     "country": "Finland",
     "code": "Finland",
+    "population": 5523231,
     "geoId": "Finland",
     "data": [
       {
@@ -19771,6 +19819,7 @@
     "id": "France",
     "country": "France",
     "code": "France",
+    "population": 64979548,
     "geoId": "France",
     "data": [
       {
@@ -20124,6 +20173,7 @@
     "id": "Gabon",
     "country": "Gabon",
     "code": "Gabon",
+    "population": 2025137,
     "geoId": "Gabon",
     "data": [
       {
@@ -20477,6 +20527,7 @@
     "id": "Gambia",
     "country": "Gambia",
     "code": "Gambia",
+    "population": 2100568,
     "geoId": "Gambia",
     "data": [
       {
@@ -20830,6 +20881,7 @@
     "id": "Georgia",
     "country": "Georgia",
     "code": "Georgia",
+    "population": 3912061,
     "geoId": "Georgia",
     "data": [
       {
@@ -21183,6 +21235,7 @@
     "id": "Germany",
     "country": "Germany",
     "code": "Germany",
+    "population": 82114224,
     "geoId": "Germany",
     "data": [
       {
@@ -21536,6 +21589,7 @@
     "id": "Ghana",
     "country": "Ghana",
     "code": "Ghana",
+    "population": 28833629,
     "geoId": "Ghana",
     "data": [
       {
@@ -21889,6 +21943,7 @@
     "id": "Greece",
     "country": "Greece",
     "code": "Greece",
+    "population": 11159773,
     "geoId": "Greece",
     "data": [
       {
@@ -22242,6 +22297,7 @@
     "id": "Guatemala",
     "country": "Guatemala",
     "code": "Guatemala",
+    "population": 16913503,
     "geoId": "Guatemala",
     "data": [
       {
@@ -22595,6 +22651,7 @@
     "id": "Guinea",
     "country": "Guinea",
     "code": "Guinea",
+    "population": 12717176,
     "geoId": "Guinea",
     "data": [
       {
@@ -22948,6 +23005,7 @@
     "id": "Guyana",
     "country": "Guyana",
     "code": "Guyana",
+    "population": 777859,
     "geoId": "Guyana",
     "data": [
       {
@@ -23301,6 +23359,7 @@
     "id": "Haiti",
     "country": "Haiti",
     "code": "Haiti",
+    "population": 10981229,
     "geoId": "Haiti",
     "data": [
       {
@@ -24007,6 +24066,7 @@
     "id": "Honduras",
     "country": "Honduras",
     "code": "Honduras",
+    "population": 9265067,
     "geoId": "Honduras",
     "data": [
       {
@@ -24360,6 +24420,7 @@
     "id": "Hungary",
     "country": "Hungary",
     "code": "Hungary",
+    "population": 9721559,
     "geoId": "Hungary",
     "data": [
       {
@@ -24713,6 +24774,7 @@
     "id": "Iceland",
     "country": "Iceland",
     "code": "Iceland",
+    "population": 335025,
     "geoId": "Iceland",
     "data": [
       {
@@ -25066,6 +25128,7 @@
     "id": "India",
     "country": "India",
     "code": "India",
+    "population": 1339180127,
     "geoId": "India",
     "data": [
       {
@@ -25419,6 +25482,7 @@
     "id": "Indonesia",
     "country": "Indonesia",
     "code": "Indonesia",
+    "population": 263991379,
     "geoId": "Indonesia",
     "data": [
       {
@@ -25772,6 +25836,7 @@
     "id": "Iran",
     "country": "Iran",
     "code": "Iran",
+    "population": 81162788,
     "geoId": "Iran",
     "data": [
       {
@@ -26125,6 +26190,7 @@
     "id": "Iraq",
     "country": "Iraq",
     "code": "Iraq",
+    "population": 38274618,
     "geoId": "Iraq",
     "data": [
       {
@@ -26478,6 +26544,7 @@
     "id": "Ireland",
     "country": "Ireland",
     "code": "Ireland",
+    "population": 4761657,
     "geoId": "Ireland",
     "data": [
       {
@@ -26831,6 +26898,7 @@
     "id": "Israel",
     "country": "Israel",
     "code": "Israel",
+    "population": 8321570,
     "geoId": "Israel",
     "data": [
       {
@@ -27184,6 +27252,7 @@
     "id": "Italy",
     "country": "Italy",
     "code": "Italy",
+    "population": 59359900,
     "geoId": "Italy",
     "data": [
       {
@@ -27537,6 +27606,7 @@
     "id": "Jamaica",
     "country": "Jamaica",
     "code": "Jamaica",
+    "population": 2890299,
     "geoId": "Jamaica",
     "data": [
       {
@@ -27890,6 +27960,7 @@
     "id": "Japan",
     "country": "Japan",
     "code": "Japan",
+    "population": 127484450,
     "geoId": "Japan",
     "data": [
       {
@@ -28243,6 +28314,7 @@
     "id": "Jordan",
     "country": "Jordan",
     "code": "Jordan",
+    "population": 9702353,
     "geoId": "Jordan",
     "data": [
       {
@@ -28596,6 +28668,7 @@
     "id": "Kazakhstan",
     "country": "Kazakhstan",
     "code": "Kazakhstan",
+    "population": 18204499,
     "geoId": "Kazakhstan",
     "data": [
       {
@@ -28949,6 +29022,7 @@
     "id": "Kenya",
     "country": "Kenya",
     "code": "Kenya",
+    "population": 49699862,
     "geoId": "Kenya",
     "data": [
       {
@@ -29302,6 +29376,7 @@
     "id": "Korea, South",
     "country": "Korea, South",
     "code": "Korea, South",
+    "population": 50982212,
     "geoId": "Korea, South",
     "data": [
       {
@@ -29655,6 +29730,7 @@
     "id": "Kuwait",
     "country": "Kuwait",
     "code": "Kuwait",
+    "population": 4136528,
     "geoId": "Kuwait",
     "data": [
       {
@@ -30008,6 +30084,7 @@
     "id": "Kyrgyzstan",
     "country": "Kyrgyzstan",
     "code": "Kyrgyzstan",
+    "population": 6045117,
     "geoId": "Kyrgyzstan",
     "data": [
       {
@@ -30361,6 +30438,7 @@
     "id": "Latvia",
     "country": "Latvia",
     "code": "Latvia",
+    "population": 1949670,
     "geoId": "Latvia",
     "data": [
       {
@@ -30714,6 +30792,7 @@
     "id": "Lebanon",
     "country": "Lebanon",
     "code": "Lebanon",
+    "population": 6082357,
     "geoId": "Lebanon",
     "data": [
       {
@@ -31067,6 +31146,7 @@
     "id": "Liberia",
     "country": "Liberia",
     "code": "Liberia",
+    "population": 4731906,
     "geoId": "Liberia",
     "data": [
       {
@@ -31420,6 +31500,7 @@
     "id": "Liechtenstein",
     "country": "Liechtenstein",
     "code": "Liechtenstein",
+    "population": 37922,
     "geoId": "Liechtenstein",
     "data": [
       {
@@ -31773,6 +31854,7 @@
     "id": "Lithuania",
     "country": "Lithuania",
     "code": "Lithuania",
+    "population": 2890297,
     "geoId": "Lithuania",
     "data": [
       {
@@ -32126,6 +32208,7 @@
     "id": "Luxembourg",
     "country": "Luxembourg",
     "code": "Luxembourg",
+    "population": 583455,
     "geoId": "Luxembourg",
     "data": [
       {
@@ -32479,6 +32562,7 @@
     "id": "Madagascar",
     "country": "Madagascar",
     "code": "Madagascar",
+    "population": 25570895,
     "geoId": "Madagascar",
     "data": [
       {
@@ -32832,6 +32916,7 @@
     "id": "Malaysia",
     "country": "Malaysia",
     "code": "Malaysia",
+    "population": 31624264,
     "geoId": "Malaysia",
     "data": [
       {
@@ -33185,6 +33270,7 @@
     "id": "Maldives",
     "country": "Maldives",
     "code": "Maldives",
+    "population": 436330,
     "geoId": "Maldives",
     "data": [
       {
@@ -33538,6 +33624,7 @@
     "id": "Malta",
     "country": "Malta",
     "code": "Malta",
+    "population": 430835,
     "geoId": "Malta",
     "data": [
       {
@@ -33891,6 +33978,7 @@
     "id": "Mauritania",
     "country": "Mauritania",
     "code": "Mauritania",
+    "population": 4420184,
     "geoId": "Mauritania",
     "data": [
       {
@@ -34244,6 +34332,7 @@
     "id": "Mauritius",
     "country": "Mauritius",
     "code": "Mauritius",
+    "population": 1265138,
     "geoId": "Mauritius",
     "data": [
       {
@@ -34597,6 +34686,7 @@
     "id": "Mexico",
     "country": "Mexico",
     "code": "Mexico",
+    "population": 129163276,
     "geoId": "Mexico",
     "data": [
       {
@@ -34950,6 +35040,7 @@
     "id": "Moldova",
     "country": "Moldova",
     "code": "Moldova",
+    "population": 4051212,
     "geoId": "Moldova",
     "data": [
       {
@@ -35303,6 +35394,7 @@
     "id": "Monaco",
     "country": "Monaco",
     "code": "Monaco",
+    "population": 38695,
     "geoId": "Monaco",
     "data": [
       {
@@ -35656,6 +35748,7 @@
     "id": "Mongolia",
     "country": "Mongolia",
     "code": "Mongolia",
+    "population": 3075647,
     "geoId": "Mongolia",
     "data": [
       {
@@ -36362,6 +36455,7 @@
     "id": "Morocco",
     "country": "Morocco",
     "code": "Morocco",
+    "population": 35739580,
     "geoId": "Morocco",
     "data": [
       {
@@ -36715,6 +36809,7 @@
     "id": "Namibia",
     "country": "Namibia",
     "code": "Namibia",
+    "population": 2533794,
     "geoId": "Namibia",
     "data": [
       {
@@ -37068,6 +37163,7 @@
     "id": "Nepal",
     "country": "Nepal",
     "code": "Nepal",
+    "population": 29304998,
     "geoId": "Nepal",
     "data": [
       {
@@ -37421,6 +37517,7 @@
     "id": "Netherlands",
     "country": "Netherlands",
     "code": "Netherlands",
+    "population": 17035938,
     "geoId": "Netherlands",
     "data": [
       {
@@ -37774,6 +37871,7 @@
     "id": "New Zealand",
     "country": "New Zealand",
     "code": "New Zealand",
+    "population": 4705818,
     "geoId": "New Zealand",
     "data": [
       {
@@ -38127,6 +38225,7 @@
     "id": "Nicaragua",
     "country": "Nicaragua",
     "code": "Nicaragua",
+    "population": 6217581,
     "geoId": "Nicaragua",
     "data": [
       {
@@ -38480,6 +38579,7 @@
     "id": "Niger",
     "country": "Niger",
     "code": "Niger",
+    "population": 21477348,
     "geoId": "Niger",
     "data": [
       {
@@ -38833,6 +38933,7 @@
     "id": "Nigeria",
     "country": "Nigeria",
     "code": "Nigeria",
+    "population": 190886311,
     "geoId": "Nigeria",
     "data": [
       {
@@ -39186,6 +39287,7 @@
     "id": "North Macedonia",
     "country": "North Macedonia",
     "code": "North Macedonia",
+    "population": 2024000,
     "geoId": "North Macedonia",
     "data": [
       {
@@ -39539,6 +39641,7 @@
     "id": "Norway",
     "country": "Norway",
     "code": "Norway",
+    "population": 5305383,
     "geoId": "Norway",
     "data": [
       {
@@ -39892,6 +39995,7 @@
     "id": "Oman",
     "country": "Oman",
     "code": "Oman",
+    "population": 4636262,
     "geoId": "Oman",
     "data": [
       {
@@ -40245,6 +40349,7 @@
     "id": "Pakistan",
     "country": "Pakistan",
     "code": "Pakistan",
+    "population": 197015955,
     "geoId": "Pakistan",
     "data": [
       {
@@ -40598,6 +40703,7 @@
     "id": "Panama",
     "country": "Panama",
     "code": "Panama",
+    "population": 4098587,
     "geoId": "Panama",
     "data": [
       {
@@ -40951,6 +41057,7 @@
     "id": "Papua New Guinea",
     "country": "Papua New Guinea",
     "code": "Papua New Guinea",
+    "population": 8251162,
     "geoId": "Papua New Guinea",
     "data": [
       {
@@ -41304,6 +41411,7 @@
     "id": "Paraguay",
     "country": "Paraguay",
     "code": "Paraguay",
+    "population": 6811297,
     "geoId": "Paraguay",
     "data": [
       {
@@ -41657,6 +41765,7 @@
     "id": "Peru",
     "country": "Peru",
     "code": "Peru",
+    "population": 32165485,
     "geoId": "Peru",
     "data": [
       {
@@ -42010,6 +42119,7 @@
     "id": "Philippines",
     "country": "Philippines",
     "code": "Philippines",
+    "population": 104918090,
     "geoId": "Philippines",
     "data": [
       {
@@ -42363,6 +42473,7 @@
     "id": "Poland",
     "country": "Poland",
     "code": "Poland",
+    "population": 38170712,
     "geoId": "Poland",
     "data": [
       {
@@ -42716,6 +42827,7 @@
     "id": "Portugal",
     "country": "Portugal",
     "code": "Portugal",
+    "population": 10329506,
     "geoId": "Portugal",
     "data": [
       {
@@ -43069,6 +43181,7 @@
     "id": "Qatar",
     "country": "Qatar",
     "code": "Qatar",
+    "population": 2639211,
     "geoId": "Qatar",
     "data": [
       {
@@ -43422,6 +43535,7 @@
     "id": "Romania",
     "country": "Romania",
     "code": "Romania",
+    "population": 19679306,
     "geoId": "Romania",
     "data": [
       {
@@ -44128,6 +44242,7 @@
     "id": "Rwanda",
     "country": "Rwanda",
     "code": "Rwanda",
+    "population": 12208407,
     "geoId": "Rwanda",
     "data": [
       {
@@ -44481,6 +44596,7 @@
     "id": "Saint Lucia",
     "country": "Saint Lucia",
     "code": "Saint Lucia",
+    "population": 178844,
     "geoId": "Saint Lucia",
     "data": [
       {
@@ -44834,6 +44950,7 @@
     "id": "Saint Vincent and the Grenadines",
     "country": "Saint Vincent and the Grenadines",
     "code": "Saint Vincent and the Grenadines",
+    "population": 109897,
     "geoId": "Saint Vincent and the Grenadines",
     "data": [
       {
@@ -45187,6 +45304,7 @@
     "id": "San Marino",
     "country": "San Marino",
     "code": "San Marino",
+    "population": 33400,
     "geoId": "San Marino",
     "data": [
       {
@@ -45540,6 +45658,7 @@
     "id": "Saudi Arabia",
     "country": "Saudi Arabia",
     "code": "Saudi Arabia",
+    "population": 32938213,
     "geoId": "Saudi Arabia",
     "data": [
       {
@@ -45893,6 +46012,7 @@
     "id": "Senegal",
     "country": "Senegal",
     "code": "Senegal",
+    "population": 15850567,
     "geoId": "Senegal",
     "data": [
       {
@@ -46599,6 +46719,7 @@
     "id": "Seychelles",
     "country": "Seychelles",
     "code": "Seychelles",
+    "population": 94737,
     "geoId": "Seychelles",
     "data": [
       {
@@ -46952,6 +47073,7 @@
     "id": "Singapore",
     "country": "Singapore",
     "code": "Singapore",
+    "population": 5708844,
     "geoId": "Singapore",
     "data": [
       {
@@ -47305,6 +47427,7 @@
     "id": "Slovakia",
     "country": "Slovakia",
     "code": "Slovakia",
+    "population": 5447662,
     "geoId": "Slovakia",
     "data": [
       {
@@ -47658,6 +47781,7 @@
     "id": "Slovenia",
     "country": "Slovenia",
     "code": "Slovenia",
+    "population": 2079976,
     "geoId": "Slovenia",
     "data": [
       {
@@ -48011,6 +48135,7 @@
     "id": "Somalia",
     "country": "Somalia",
     "code": "Somalia",
+    "population": 14742523,
     "geoId": "Somalia",
     "data": [
       {
@@ -48364,6 +48489,7 @@
     "id": "South Africa",
     "country": "South Africa",
     "code": "South Africa",
+    "population": 56717156,
     "geoId": "South Africa",
     "data": [
       {
@@ -48717,6 +48843,7 @@
     "id": "Spain",
     "country": "Spain",
     "code": "Spain",
+    "population": 46354321,
     "geoId": "Spain",
     "data": [
       {
@@ -49423,6 +49550,7 @@
     "id": "Sudan",
     "country": "Sudan",
     "code": "Sudan",
+    "population": 40533330,
     "geoId": "Sudan",
     "data": [
       {
@@ -49776,6 +49904,7 @@
     "id": "Suriname",
     "country": "Suriname",
     "code": "Suriname",
+    "population": 563402,
     "geoId": "Suriname",
     "data": [
       {
@@ -50129,6 +50258,7 @@
     "id": "Sweden",
     "country": "Sweden",
     "code": "Sweden",
+    "population": 9910701,
     "geoId": "Sweden",
     "data": [
       {
@@ -50482,6 +50612,7 @@
     "id": "Switzerland",
     "country": "Switzerland",
     "code": "Switzerland",
+    "population": 8476005,
     "geoId": "Switzerland",
     "data": [
       {
@@ -51188,6 +51319,7 @@
     "id": "Tanzania",
     "country": "Tanzania",
     "code": "Tanzania",
+    "population": 57310019,
     "geoId": "Tanzania",
     "data": [
       {
@@ -51541,6 +51673,7 @@
     "id": "Thailand",
     "country": "Thailand",
     "code": "Thailand",
+    "population": 69037513,
     "geoId": "Thailand",
     "data": [
       {
@@ -51894,6 +52027,7 @@
     "id": "Togo",
     "country": "Togo",
     "code": "Togo",
+    "population": 7797694,
     "geoId": "Togo",
     "data": [
       {
@@ -52247,6 +52381,7 @@
     "id": "Trinidad and Tobago",
     "country": "Trinidad and Tobago",
     "code": "Trinidad and Tobago",
+    "population": 1369125,
     "geoId": "Trinidad and Tobago",
     "data": [
       {
@@ -52600,6 +52735,7 @@
     "id": "Tunisia",
     "country": "Tunisia",
     "code": "Tunisia",
+    "population": 11532127,
     "geoId": "Tunisia",
     "data": [
       {
@@ -52953,6 +53089,7 @@
     "id": "Turkey",
     "country": "Turkey",
     "code": "Turkey",
+    "population": 80745020,
     "geoId": "Turkey",
     "data": [
       {
@@ -53306,6 +53443,7 @@
     "id": "Uganda",
     "country": "Uganda",
     "code": "Uganda",
+    "population": 42862958,
     "geoId": "Uganda",
     "data": [
       {
@@ -53659,6 +53797,7 @@
     "id": "Ukraine",
     "country": "Ukraine",
     "code": "Ukraine",
+    "population": 44222947,
     "geoId": "Ukraine",
     "data": [
       {
@@ -54012,6 +54151,7 @@
     "id": "United Arab Emirates",
     "country": "United Arab Emirates",
     "code": "United Arab Emirates",
+    "population": 9400145,
     "geoId": "United Arab Emirates",
     "data": [
       {
@@ -54365,6 +54505,7 @@
     "id": "United Kingdom",
     "country": "United Kingdom",
     "code": "United Kingdom",
+    "population": 66181585,
     "geoId": "United Kingdom",
     "data": [
       {
@@ -54718,6 +54859,7 @@
     "id": "Uruguay",
     "country": "Uruguay",
     "code": "Uruguay",
+    "population": 3456750,
     "geoId": "Uruguay",
     "data": [
       {
@@ -55071,6 +55213,7 @@
     "id": "US",
     "country": "US",
     "code": "US",
+    "population": 324459463,
     "geoId": "US",
     "data": [
       {
@@ -55424,6 +55567,7 @@
     "id": "Uzbekistan",
     "country": "Uzbekistan",
     "code": "Uzbekistan",
+    "population": 31910641,
     "geoId": "Uzbekistan",
     "data": [
       {
@@ -55777,6 +55921,7 @@
     "id": "Venezuela",
     "country": "Venezuela",
     "code": "Venezuela",
+    "population": 31977065,
     "geoId": "Venezuela",
     "data": [
       {
@@ -56130,6 +56275,7 @@
     "id": "Vietnam",
     "country": "Vietnam",
     "code": "Vietnam",
+    "population": 95540800,
     "geoId": "Vietnam",
     "data": [
       {
@@ -56483,6 +56629,7 @@
     "id": "Zambia",
     "country": "Zambia",
     "code": "Zambia",
+    "population": 17094130,
     "geoId": "Zambia",
     "data": [
       {
@@ -56836,6 +56983,7 @@
     "id": "Zimbabwe",
     "country": "Zimbabwe",
     "code": "Zimbabwe",
+    "population": 16529904,
     "geoId": "Zimbabwe",
     "data": [
       {
@@ -57189,6 +57337,7 @@
     "id": "Dominica",
     "country": "Dominica",
     "code": "Dominica",
+    "population": 73925,
     "geoId": "Dominica",
     "data": [
       {
@@ -57542,6 +57691,7 @@
     "id": "Grenada",
     "country": "Grenada",
     "code": "Grenada",
+    "population": 107825,
     "geoId": "Grenada",
     "data": [
       {
@@ -57895,6 +58045,7 @@
     "id": "Mozambique",
     "country": "Mozambique",
     "code": "Mozambique",
+    "population": 29668834,
     "geoId": "Mozambique",
     "data": [
       {
@@ -58248,6 +58399,7 @@
     "id": "Syria",
     "country": "Syria",
     "code": "Syria",
+    "population": 18269868,
     "geoId": "Syria",
     "data": [
       {
@@ -58954,6 +59106,7 @@
     "id": "Belize",
     "country": "Belize",
     "code": "Belize",
+    "population": 374681,
     "geoId": "Belize",
     "data": [
       {
@@ -59307,6 +59460,7 @@
     "id": "Laos",
     "country": "Laos",
     "code": "Laos",
+    "population": 6858160,
     "geoId": "Laos",
     "data": [
       {
@@ -60366,6 +60520,7 @@
     "id": "Guinea-Bissau",
     "country": "Guinea-Bissau",
     "code": "Guinea-Bissau",
+    "population": 1861283,
     "geoId": "Guinea-Bissau",
     "data": [
       {
@@ -60719,6 +60874,7 @@
     "id": "Mali",
     "country": "Mali",
     "code": "Mali",
+    "population": 18541980,
     "geoId": "Mali",
     "data": [
       {
@@ -61072,6 +61228,7 @@
     "id": "Saint Kitts and Nevis",
     "country": "Saint Kitts and Nevis",
     "code": "Saint Kitts and Nevis",
+    "population": 55345,
     "geoId": "Saint Kitts and Nevis",
     "data": [
       {
@@ -62484,6 +62641,7 @@
     "id": "Botswana",
     "country": "Botswana",
     "code": "Botswana",
+    "population": 2291661,
     "geoId": "Botswana",
     "data": [
       {

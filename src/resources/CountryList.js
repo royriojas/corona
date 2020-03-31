@@ -9,6 +9,14 @@ class CountryEntry {
 
   dataPoints = [];
 
+  set population(population) {
+    this.data.population = population;
+  }
+
+  get population() {
+    return this.data.population;
+  }
+
   constructor(data) {
     this.data = data;
   }
@@ -33,6 +41,7 @@ class CountryEntry {
 
     return {
       ...this.data,
+
       country: this.data.country.replace(/_/g, ' '),
       id: this.data.geoId,
       deaths: ret.deaths.sort((a, b) => (a.x < b.x ? -1 : 1)).map((entry, index) => ({ ...entry, date: entry.x.toISODate(), x: `day-${index}` })),
@@ -95,6 +104,11 @@ class CountryList {
 
     countryEntry.push(rest);
   }
+
+  updatePopulation = (id, population) => {
+    const country = this.get(id);
+    country.population = population;
+  };
 
   serialize() {
     return Array.from(this.dataMap.values()).reduce(
