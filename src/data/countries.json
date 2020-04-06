@@ -722,5 +722,13 @@
   {
     "value": "Malawi",
     "label": "Malawi"
+  },
+  {
+    "value": "South Sudan",
+    "label": "South Sudan"
+  },
+  {
+    "value": "Western Sahara",
+    "label": "Western Sahara"
   }
 ]
