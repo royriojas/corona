@@ -22,7 +22,7 @@
     "clean": "rm -rf dist/ public/dist/",
     "start:dev": "sx 'npm run build:watch' './bnr server:start' './bnr serve'",
     "update:data:old": "curl https://opendata.ecdc.europa.eu/covid19/casedistribution/csv/ > data.csv && node src/resources/fixData.js",
-    "update:data": "curl https://pomber.github.io/covid19/timeseries.json > data.json && babel-node src/resources/transform.js",
+    "update:data": "curl https://pomber.github.io/covid19/timeseries.json > data.json && babel-node src/resources/transform.js && git commit -am 'update data' && git push origin master",
     "start": "npm run clean && npm run build:prod && ./bnr build:backend --production && ./bnr server:start --production"
   },
   "bnrConfig": "./tasks.js",
