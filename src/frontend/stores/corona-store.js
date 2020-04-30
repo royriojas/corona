@@ -61,7 +61,7 @@ class CoronaStore {
   }
 
   filterEmptyAtBegining = data => {
-    const indexOfGreaterThanZero = data.findIndex(entry => entry.y > 0);
+    const indexOfGreaterThanZero = data.findIndex(entry => entry.y > 10);
     if (indexOfGreaterThanZero > 0) {
       return data.slice(indexOfGreaterThanZero).map((entry, index) => ({ ...entry, x: `day-${index}` }));
     }
